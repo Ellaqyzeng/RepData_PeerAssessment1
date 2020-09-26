@@ -1,7 +1,7 @@
 ---
-title: 'Reproducible Research: Peer Assessment 1'
-author: "puttyomax"
-date: "January 15, 2017"
+title: 'Reproducible Research: Assessment 1'
+author: "Ellaqyzeng"
+date: "09, 2020"
 output: word_document
 ---
 ###Loading the data
