@@ -188,7 +188,7 @@ p</code></pre>
 <p>Although patterns are generally similar, “weekday” has the stronger peak as we can see below.</p>
 <pre class="r"><code>date&lt;-as.vector(a2$date)
 Checker&lt;-(weekdays(as.Date(date,format=&quot;%m/%d/%Y&quot;)))
-Checker&lt;-(Checker==&quot;土曜日&quot;)|(Checker==&quot;日曜日&quot;)
+Checker&lt;-(Checker==&quot;Saturday&quot;)|(Checker==&quot;Sunday&quot;)
 a3&lt;-cbind(a2,Checker)
 a41&lt;-subset(a3,Checker==TRUE)
 weekend&lt;-aggregate(steps~interval,a41,mean)
