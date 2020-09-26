@@ -116,7 +116,7 @@ Although patterns are generally similar, "weekday" has the stronger peak as we c
 ```r
 date<-as.vector(a2$date)
 Checker<-(weekdays(as.Date(date,format="%m/%d/%Y")))
-Checker<-(Checker=="土曜日")|(Checker=="日曜日")
+Checker<-(Checker=="Saturday")|(Checker=="Sunday")
 a3<-cbind(a2,Checker)
 a41<-subset(a3,Checker==TRUE)
 weekend<-aggregate(steps~interval,a41,mean)
